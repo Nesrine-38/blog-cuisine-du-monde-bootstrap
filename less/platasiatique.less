@@ -1,0 +1,51 @@
+// out: "../css/platasiatique.css", compress: true, sourceMap: false
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+//main
+.MainContent{
+    //le titre H1
+    .plat{
+        color: var(--gray);
+        text-align: center;
+    }
+    // la liste et h2
+    .listeplat li,.nomplat{
+        font-family: var(--family);
+        color: var(--blue);
+    }
+    //paragraphe
+    .listeplat li,.paragraphe{
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 20PX;
+        color: black;
+    }
+    //image
+    .listeplat li .imageplat{
+        width: 800PX;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .MainContent{
+        //le titre H1
+        .plat{
+            font-size: small;
+            text-align: left;
+        }
+        .listeplat li,.nomplat{
+            font-size: small;
+            text-align: left;
+        }
+        .listeplat li,.paragraphe{
+            font-size:small;
+        }
+        .listeplat li .imageplat{
+            width: 100%;
+        }
+
+}}
+
+
+
+

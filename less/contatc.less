@@ -1,0 +1,51 @@
+// out: "../css/contatc.css", compress: true, sourceMap: false
+// FORM DE CONTACT
+.formContact{
+    margin: 20px;
+    border: 1px solid var(--dore);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 3px 3px 0px var(--blue);
+}
+// LES LABELS 
+.label{
+    color: var(--dore);
+}
+// LES INPUTS
+#lastname,#firstname,#email,#date{
+    width: 700px;
+    display: flex;
+}
+// METTRE UN ESPACE ENTRE LES ELEMENTS
+.label,#lastname,#firstname,#email,#date,#message{
+    margin: 10px;
+}
+//TEXT AREA 
+#message {
+    display: flex;
+    width: 700px;
+    height: 40px;
+    resize: none;
+}
+// BOUTON
+#Envoyer{
+    color: var(--blue);
+    border: none;
+    background: none;
+}
+// L'effet du survol sur notre bouton 
+#Envoyer:hover{
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1150px) {
+
+    .MainContent{
+        //le titre H1
+        .plat{
+            font-size: small;
+            text-align: left;
+        }}
+    .formContact,#lastname,#firstname,#email,#date,#message{
+        width: 90%;
+    }}

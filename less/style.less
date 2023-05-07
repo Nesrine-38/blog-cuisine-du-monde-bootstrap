@@ -1,0 +1,186 @@
+// out: "../css/style.css", compress: true, sourceMap: false
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+//Les variable 
+:root{
+    --blue:#5E17EB;
+    --dore:#d7b94b;
+    --white:white;
+    --family:'Dancing Script', cursive;
+    --text:uppercase;
+    --red:red;
+    --gray:gray;
+}
+// pour ts les elements 
+*{
+     margin: 5px; 
+}
+// partie header
+.headercontent {
+    display: grid;
+    grid-template-columns: 150px 1fr 2fr; 
+    height: 150px;
+    // le logo
+    #logo{
+        max-width: 100%;
+        height: 130px;
+    }
+    // le titre de notre projet
+    .Titre{ 
+    font-family:var(--family);
+    text-transform: var(--text);
+    text-align: center;
+    color: var(--blue);
+    line-height: 110px;
+    }
+    // la liste non ordonnée 
+    .navbar .liste{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none; 
+        line-height: 120px;
+    }
+    // les liens 
+    a {
+        text-decoration: none;
+        color: var(--dore);
+        font-weight: bold;
+    }
+}
+// la ligne qui separe le header et le contenu principale
+hr{
+    background-color:var(--dore);
+    border:none;
+    height: 1.5px;
+    width: auto;
+}
+// la partie section 
+.sectioncontent{
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    // aside 
+    .Gpart{
+        margin: 10px;
+        //form
+        .form{
+            text-align: center;
+            //l'icon de recherche 
+            #icon{
+                background-image: url(https://cdn4.iconfinder.com/data/icons/round-mobile-ui-set/512/letter-message-email-mail-20.png);
+                background-position: 10px center;
+                background-repeat: no-repeat;
+                border: 1px solid var(--dore);
+            
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+                border-radius: 4px;
+            
+                padding: 10px 5px 10px 20px;
+                text-indent: 20px;
+            
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 2s;
+                transition: all 0.2s;
+            
+                width: 280px;
+                box-shadow: 0px 1px 1px 0px var(--blue);
+            }
+        }
+        // notre video
+        #video{
+            margin: 10px;
+            width: 300px;
+            height: 500px;
+            border-radius: 25px;
+        }}
+        // main    
+        .MainContent{
+            display: inline-block;
+            .Plat{
+                color: gray;
+                text-align: center;
+        }
+        //lien
+        a{
+            text-decoration: none;
+            article {
+                border: 1px solid var(--dore);
+                border-radius: 20px;
+                margin: 10px;
+                padding: 10px;
+                box-shadow: 0px 3px 3px 0px;
+    
+                .Specialite {
+                    margin: 10px;
+                    background: -webkit-linear-gradient(60DEG, var(--blue), var(--white));
+                    -webkit-background-clip: text;
+
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                    --text-fill-color: transparent;
+                    text-transform:capitalize;
+                }
+                p {
+                    color: var(--red);
+                    text-decoration: none;
+                    font-weight: bold;
+                }}
+
+        }
+    }}
+    //footer
+    .FooterContent{
+        margin: 10px;
+        text-align: center;
+        color: var(--blue);
+        font-weight: bold;
+    }
+
+
+
+//partie responsive
+    @media screen and (max-width: 1150px) {
+        .headercontent {
+            display: flex;
+          flex-direction: column;
+          justify-content: center;
+          #logo{
+            width: 30%;
+          }
+          .navbar{
+            .liste{
+                    display:flex;
+                    justify-content: space-evenly;
+                }}
+            .Titre{
+               display: none;
+            }}
+        hr{
+            width: 100%;
+        }
+        .sectioncontent{
+            .Gpart {
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin: 5px;
+                    #icon{
+                        margin: 5px;
+                    }
+                }
+            }
+            .MainContent{
+                .Plat{
+                    font-size: small;
+                }}
+        }}
+
+       .FooterContent {
+            text-align: center;
+        }
+
+
