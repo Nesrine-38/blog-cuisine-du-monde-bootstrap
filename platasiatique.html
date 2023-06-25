@@ -1,62 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/platasiatique.css">
-    <title>Cuisine du Monde</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <title>Cuisine du Monde</title>
 
 </head>
+
 <body>
-    <header class="headercontent">
-        <img src="image/logoheader.png" alt="" id="logo">
-        <h1 class="Titre">La cuisine du monde </h1>
-   <NAV class="navbar">
-       <UL class="liste">
-           <li><a href="index.html">Accueil</a></li>
-            <li><a href="plateuropeen.html">Univers</a></li>
-            <li> <a href="contact.html">Contact</a></li>
-       </UL>
-   </NAV>   
-</header>
-<hr>
-<section class="sectioncontent">
-   <ASIDE class="Gpart">
-       <form action="#" method="get" class="form">
-           <input type="search" placeholder="search" name="search" rel="search" id="icon">
-       </form>
-           <video controls autoplay muted loop ="auto"  src="image/reel.mp4" type="video/ogg" id="video"></video>
-   </ASIDE>
-   <MAIN class="MainContent">
-            <h1 class="plat">Les spécialités asiatiques à tester</h1>
-            <ol class="listeplat">
-                <li><h2 class="nomplat">Les Raviolis chinois</h2>
-                    <p class="paragraphe">Les raviolis chinois (jiǎozi 饺子 en Chine)sont souvent en forme de demi-lune évoquant celle de petits lingots d’argent appelées yuanbao. Les jiaozi sont ainsi généralement consommés lors de la Fête du printemps ou autrement dit Nouvel An chinois afin d'apporter richesse pour la nouvelle année.</p>
-                    <img src="image/raviolischinoisjpg.jpg" alt="Les raviolis chinois" class="imageplat">
+  <header class="headercontent">
+    <div class="row">
 
-                </li>
-                <li><h2 class="nomplat">Le sushi japonais</h2>
-                    <p>Le sushi est un plat traditionnel japonais, composé d'un riz vinaigré appelé shari combiné avec un autre ingrédient appelé neta qui est habituellement du poisson cru ou des fruits de mer.</p>
-                    <img src="image/sushijaponais.jfif" alt="Le sushi japonais" class="imageplat">
+      <img src="image/chef.png" alt="" id="logo"
+        class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 img-fluid " alt="Logo"
+        style="width: 90px; height: 80px;">
+      <H1 class="col-lg-5 text-center p-4 fw-bold" style="font-family: 'Dancing Script', cursive; color: #5E17EB;">La
+        cuisine du
+        monde </H1>
 
-                </li>
-                <li><h2 class="nomplat">Les nems vietnamiens</h2>
-                    <p>Un nem ou rouleau impérial ou nem rán ou chả giò ou fried spring roll, spring roll ou vietnamese roll est une spécialité culinaire traditionnelle emblématique de la cuisine vietnamienne, à base de beignet salé farci frit entouré d’une galette de riz.</p>
-                    <img src="image/nems-vietnamiens.jpg" alt="les nems vietnamiens" class="imageplat">
+      <div class="nav-scroller py-1 mb-2  col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5">
+        <nav class="nav d-flex justify-content-between justify-content-center ">
 
-                </li>
-            </ol>        
-    </MAIN>
-</section>
-<hr>
-    <footer class="FooterContent">
-        <p>&copy; 2023 la cuisine du monde </p>
-        <a href="https://www.facebook.com/profile.php?id=100079040089606"  target="_blank"><img src="image/facebook - Copie.png" alt=""></a>
-        <a href="https://www.instagram.com/nesrine_ishak/?hl=fr" alt="" target="_blank"><img src="image/instagram.png" alt=""></a>
-        <a href="https://www.twitter.com" alt="" target="_blank"><img src="image/icons8-twitter-16.png" alt=""></a>
-</footer>
+          <a class="p-4 fw-bold text-decoration-none text-center " href="index.html" style="color: #d7b94b;">Accueil</a>
+          </li>
+          <a class="p-4 nav-link nav-link-hover fw-bold text-center" href="#" id="navbarDropdown"
+            data-bs-toggle="dropdown" aria-expanded="true" style="color: #d7b94b;">
+            Univers
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item fw-bold text-center " href="platasiatique.html" style="color: #d7b94b;">Plat
+                asiatique</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item fw-bold text-center" href="plateuropeen.html" style="color: #d7b94b;">Plat
+                europeen </a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item fw-bold text-center" href="platmaghrebins.html" style="color: #d7b94b;">plat
+                maghrebins</a></li>
+          </ul>
+          <a class="p-4 fw-bold text-decoration-none text-center" href="contact.html"
+            style="color: #d7b94b;">Contact</a>
+
+
+        </nav>
+      </div>
+    </div>
+  </header>
+  <hr>
+  <section class="container d-flex justify-content-md-between">
+    <section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+      <div class="row">
+        <form class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <div class="mb-3 ">
+            <input type="search" placeholder="Rechercher" name="search" rel="search" id="icon" class="form-control"
+              aria-describedby="email" style="border-color: #d7b94b; color:#5E17EB;">
+          </div>
+        </form>
+      </div>
+      <div class="row mb-3">
+        <video controls autoplay muted loop="auto" src="image/reel.mp4" type="video/ogg" id="video"
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 " style="border-radius: 20px"></video>
+      </div>
+    </section>
+    <section class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+      <h2 class="Plat text-center" style="color: gray;">Les spécialités asiatiques</h2>
+      <h5 class="Plat text-center mb-5 text-danger fw-bold" style="font-family: 'Dancing Script', cursive;">à tester au
+        moins une fois</h5>
+      <ASIDE class="row justify-content-evenly">
+        <div class="card  mb-3 " style="width: 16rem; border-color: #d7b94b;">
+          <img src="image/raviolischinoisjpg.jpg" class="card-img mb-3 p-2" alt="Les raviolis chinois"
+            style="width: 230px; height:142px;">
+          <div class="card-body">
+            <h5 class="card-title  text-center fw-bold" style="font-family: 'Dancing Script', cursive; color: #5E17EB;">
+              Les Raviolis chinois</h5>
+            <p class="card-text" style="text-align: justify;">Les raviolis chinois (jiǎozi 饺子 en Chine)sont souvent en
+              forme de demi-lune évoquant celle de petits lingots d’argent appelées yuanbao. Les jiaozi sont ainsi
+              généralement consommés lors de la Fête du printemps ou autrement dit Nouvel An chinois afin d'apporter
+              richesse pour la nouvelle année.</p>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="width: 16rem;border-color: #d7b94b;">
+          <img src="image/sushi japonais.jpeg" class="card-img-top mb-3 p-2" alt="Le sushi japonais"
+            style="width: 230px; height:142px;">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bold" style="font-family: 'Dancing Script', cursive; color: #5E17EB;">
+              Le sushi japonais</h5>
+            <p class="card-text" style="text-align: justify;">Le sushi est un plat traditionnel japonais, composé d'un
+              riz vinaigré appelé shari combiné avec un autre ingrédient appelé neta qui est habituellement du poisson
+              cru ou des fruits de mer.</p>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="width: 16rem; border-color: #d7b94b;">
+          <img src="image/nems-vietnamiens.jpg" class="card-img-top mb-3 p-2" alt="les nems vietnamiens"
+            style="width: 230px; height:142px;">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bold" style="font-family: 'Dancing Script', cursive; color: #5E17EB;">
+              Les nems vietnamiens</h5>
+            <p class="card-text" style="text-align: justify;">Un nem ou rouleau impérial ou nem rán ou chả giò ou fried
+              spring roll, spring roll ou vietnamese roll est une spécialité culinaire traditionnelle emblématique de la
+              cuisine vietnamienne, à base de beignet salé farci frit entouré d’une galette de riz.</p>
+          </div>
+        </div>
+      </ASIDE>
+    </section>
+  </section>
+
+  <hr class="border border-2" style="color: #d7b94b;">
+
+  <footer class="FooterContent text-center">
+    <p class="fw-bold" style="color: #5E17EB;">&copy; 2023 la cuisine du monde</p>
+    <a href="https://www.facebook.com/profile.php?id=100079040089606" target="_blank"><img
+        src="image/facebook - Copie.png" alt=""></a>
+    <a href="https://www.instagram.com/nesrine_ishak/?hl=fr" alt="" target="_blank"><img src="image/instagram.png"
+        alt=""></a>
+    <a href="https://www.twitter.com" alt="" target="_blank"><img src="image/icons8-twitter-16.png" alt=""></a>
+  </footer>
 </BODY>
+
 </HTML>

@@ -1,67 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/plateeuropeen.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
     <title>Cuisine du Monde</title>
 
 </head>
+
 <body>
     <header class="headercontent">
-        <img src="image/logoheader.png" alt="" id="logo">
-        <h1 class="Titre">La cuisine du monde </h1>
-   <NAV class="navbar">
-       <UL class="liste">
-           <li><a href="index.html">Accueil</a></li>
-            <li><a href="platmaghrebins.html">Univers</a></li>
-            <li> <a href="contact.html">Contact</a></li>
-       </UL>
-   </NAV>   
-</header>
-<hr>
-<section class="sectioncontent">
-   <ASIDE class="Gpart">
-       <form action="#" method="get" class="form">
-           <input type="search" placeholder="search" name="search" rel="search" id="icon">
-       </form>
-           <video controls autoplay muted loop ="auto"  src="image/reel.mp4" type="video/ogg" id="video"></video>
-   </ASIDE>
-   <MAIN class="MainContent">
-            <h1 class="plat">Spécialités européennes à tester au moins une fois</h1>
-            <ol class="listeplat">
-                <li><h2 class="nomplat">Les pasteis de nata (Portugal)</h2>
-                    <p class="paragraphe"> Je ne sais pas vous, mais j’irais bien au Portugal tous les week-ends juste pour déguster ces merveilles ! Ces sortes de petits flans nichés dans une pâte feuilletée croustillante sont fabriqués selon une recette ancestrale, bien gardée par les pâtissiers locaux. Et puis vous verrez, ils sont parfaits pour reprendre des forces après une journée passée à arpenter les ruelles de Lisbonne…</p>
-                    <img src="image/pasteis-de-nata-portugal.jpg" class="imageplat"alt="">
-                </li>
-                <li><h2 class="nomplat">La pita grecque</h2>
-                    <p>Pain traditionnel grec, la pita se déguste aussi bien en sandwich qu’en dips, pour accompagner un tzatziki ou un caviar d’aubergine. Recette méditerranéenne par excellence, elle s’accommode parfaitement avec des légumes grillés, de la fêta, du poulet pané ou encore des falafels. Il ne manque plus que les maisons blanches et bleues, et ça y est, on est en Grèce !</p>
-                    <img src="image/pita-grecque.jpg" class="imageplat" alt="">
-                </li>
-                <li><h2 class="nomplat">Les frites belges</h2>
-                    <p>Ils en sont fiers, et on les comprend ! Pas question d’aller à Bruxelles sans s’arrêter prendre un cornet de frites en sauce dans une des nombreuses friteries de la ville. A moins que vous ne préfériez vous asseoir à table pour déguster vos frites accompagnées de moules, de poisson grillé ou encore d’un hamburger… vous nous raconterez ?</p>
-                    <img src="image/frites-belges.jpg" class="imageplat"alt="">
-                </li>
-                <li><h2 class="nomplat"> La burrata italienne</h2>
-                    <p>Sorte de mozzarella, ce fromage italien au coeur crémeux a tout pour séduire les palais les plus fins. Originaire de la région des Pouilles, à l’extrême sud-est de l’Italie, la burrata est traditionnellement fabriquée à base de lait de bufflone. Elle se déguste seule avec un filet d’huile d’olive, ou accompagnée d’une salade de tomates fraîches au basilic pour une entrée ou un brunch des plus gourmands. Imaginez-vous dans le Sud de l’Italie avec cette belle assiette de burrata</p>
-                    <img src="image/burrata-italienne.jpg" class="imageplat"alt="">
-                </li>
-                <li><h2 class="nomplat"> L’Eisbein, spécialité allemande par excellence</h2>
-                    <p>Un petit tour à Berlin ? C’est l’occasion rêvée de goûter l’incontournable Eisbein, vous savez, ce jarret de porc rôti accompagné de choucroute et de purée de pois. Un plat bien consistant qui vous aidera à affronter le climat si vous y allez en hiver. Et pour boire avec ? Rien de tel qu’une bonne bière locale conseillée par le restaurant !</p>
-                    <img src="image/Eisbein-berlin.jpg" class="imageplat"alt="">
-                </li>
-            </ol>    
-   </MAIN>
-</section>
+        <div class="row">
+
+            <img src="image/chef.png" alt="" id="logo"
+                class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 img-fluid " alt="Logo"
+                style="width: 90px; height: 80px;">
+            <H1 class="col-lg-5 text-center p-4 fw-bold"
+                style="font-family: 'Dancing Script', cursive; color: #5E17EB;">La cuisine du monde </H1>
+            <div class="nav-scroller py-1 mb-2  col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5">
+                <nav class="nav d-flex justify-content-between justify-content-center ">
+
+                    <a class="p-4 fw-bold text-decoration-none text-center " href="index.html"
+                        style="color: #d7b94b;">Accueil</a></li>
+                    <a class="p-4 nav-link nav-link-hover fw-bold text-center" href="#" id="navbarDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="true" style="color: #d7b94b;">
+                        Univers
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item fw-bold text-center " href="platasiatique.html"
+                                style="color: #d7b94b;">Plat
+                                asiatique</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item fw-bold text-center" href="plateuropeen.html"
+                                style="color: #d7b94b;">Plat
+                                europeen </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item fw-bold text-center" href="platmaghrebins.html"
+                                style="color: #d7b94b;">plat
+                                maghrebins</a></li>
+                    </ul>
+                    <a class="p-4 fw-bold text-decoration-none text-center" href="contact.html"
+                        style="color: #d7b94b;">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <hr>
-    <footer class="FooterContent">
-        <p>&copy; 2023 la cuisine du monde </p>
-        <a href="https://www.facebook.com/profile.php?id=100079040089606"  target="_blank"><img src="image/facebook - Copie.png" alt=""></a>
-        <a href="https://www.instagram.com/nesrine_ishak/?hl=fr" alt="" target="_blank"><img src="image/instagram.png" alt=""></a>
+    <section class="container  d-flex justify-content-md-between">
+        <section class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="row">
+                <form class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="mb-3 ">
+                            <input type="search" placeholder="Rechercher" name="search" rel="search" id="icon"
+                                class="form-control" aria-describedby="email" style="border-color: #d7b94b; color:#5E17EB;">
+                    </div>
+                </form>
+            </div>
+            <div class="row mb-3">
+                <video controls autoplay muted loop="auto" src="image/reel.mp4" type="video/ogg" id="video"
+                    class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 "
+                    style="border-radius: 20px"></video>
+            </div>
+        </section>
+        <section class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+            <h2 class="Plat text-center" style="color: gray;">Les Spécialités européennes</h2>
+            <h5 class="Plat text-center mb-5 text-danger fw-bold" style="font-family: 'Dancing Script', cursive;">à tester au moins une fois</h5>
+            <ASIDE class="row justify-content-evenly">
+                <div class="card mb-3" style="width: 16rem; border-color: #d7b94b;">
+                    <img src="image/pasteis-de-nata-portugal.jpg" class="card-img-top mb-3 p-2"
+                        alt="Les raviolis chinois" style="width: 230px; height:142px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold"
+                            style="font-family: 'Dancing Script', cursive; color: #5E17EB;">Les
+                            pasteis de nata (Portugal)</h5>
+                        <p class="card-text" style="text-align: justify;">Je ne sais pas vous, mais j’irais bien au
+                            Portugal tous les week-ends juste
+                            pour déguster ces merveilles ! Ces sortes de petits flans nichés dans une pâte feuilletée
+                            croustillante sont fabriqués selon une recette ancestrale, bien gardée par les pâtissiers
+                            locaux. Et puis vous verrez....</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="width: 16rem; border-color: #d7b94b;">
+                    <img src="image/pita-grecque.jpg" class="card-img-top mb-3 p-2" alt="Les raviolis chinois"
+                        style="width: 230px; height:142px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  fw-bold"
+                            style="font-family: 'Dancing Script', cursive; color: #5E17EB;">La pita
+                            grecque</h5>
+                        <p class="card-text mb-5" style="text-align: justify;">Pain traditionnel grec, la pita se déguste
+                            aussi bien en sandwich qu’en
+                            dips, pour accompagner un
+                            tzatziki ou un caviar d’aubergine. Recette méditerranéenne par excellence, elle s’accommode
+                            parfaitement avec des légumes grillés, de la fêta, du poulet pané ou encore des falafels...</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="width: 16rem;border-color: #d7b94b;">
+                    <img src="image/frites-belges.jpg" class="card-img-top mb-3 p-2" alt="Les raviolis chinois"
+                        style="width: 230px; height:142px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold"
+                            style="font-family: 'Dancing Script', cursive; color: #5E17EB;">Les
+                            frites belges</h5>
+                        <p class="card-text" style="text-align: justify;">Ils en sont fiers, et on les comprend ! Pas
+                            question d’aller à Bruxelles
+                            sans s’arrêter prendre un cornet de frites en sauce dans une des nombreuses friteries de la
+                            ville....</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="width: 16rem; border-color: #d7b94b;">
+                    <img src="image/burrata-italienne.jpg" class="card-img-top mb-3 p-2" alt="Les raviolis chinois"
+                        style="width: 230px; height:142px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold"
+                            style="font-family: 'Dancing Script', cursive; color: #5E17EB;"> La
+                            burrata italienne</h5>
+                        <p class="card-text " style="text-align: justify;">Sorte de mozzarella, ce fromage italien au
+                            coeur crémeux a tout pour
+                            séduire les palais les plus
+                            fins. Originaire de la région des Pouilles, à l’extrême sud-est de l’Italie, la burrata est
+                            traditionnellement fabriquée à base de lait de bufflone....</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="width: 16rem; border-color: #d7b94b;">
+                    <img src="image/Eisbein-berlin.jpg" class="card-img-top mb-3 p-2" alt="Les raviolis chinois"
+                        style="width: 230px; height:142px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold"
+                            style="font-family: 'Dancing Script', cursive; color: #5E17EB;">
+                            L’Eisbein, spécialité allemande par excellence</h5>
+                        <p class="card-text " style="text-align: justify;">Un petit tour à Berlin ? C’est l’occasion
+                            rêvée de goûter l’incontournable
+                            Eisbein, vous savez,
+                            ce jarret de porc rôti accompagné de choucroute et de purée de pois. Un plat bien consistant
+                            qui
+                            vous aidera à affronter le climat si vous y allez en hiver...</p>
+                    </div>
+                </div>
+            </ASIDE>
+        </section>
+    </section>
+
+    <hr class="border border-2" style="color: #d7b94b;">
+
+    <footer class="FooterContent text-center">
+        <p class="fw-bold" style="color: #5E17EB;">&copy; 2023 la cuisine du monde</p>
+        <a href="https://www.facebook.com/profile.php?id=100079040089606" target="_blank"><img
+                src="image/facebook - Copie.png" alt=""></a>
+        <a href="https://www.instagram.com/nesrine_ishak/?hl=fr" alt="" target="_blank"><img src="image/instagram.png"
+                alt=""></a>
         <a href="https://www.twitter.com" alt="" target="_blank"><img src="image/icons8-twitter-16.png" alt=""></a>
-</footer>
+    </footer>
 </BODY>
+
 </HTML>
